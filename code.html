@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xingamentos</title>
+  </head>
+  <body>
+    <h1>Xingamentos</h1>
+    <label for="comentario">Insira seu comentário:</label><br>
+    <input type="text" id="comentario"><br><br>
+    <button onclick="avaliar()">Avaliar</button><br><br>
+    <p id="resultado"></p>
+    
+    <script>
+      function avaliar() {
+        let valor = 0;
+        const xingamentos = ['porra', 'p0rra', 'porr4', 'porr5', 'porr6', 'porr7', 'porr8', 'porr9', 'merda', 'lixo', 'cu', 'bosta', 'b0sta', 'imbecil', 'otario', 'cuzao', '0tario', 'otarios', '0tari0s', 'otari0s', 'cuzoes', 'cuz0es', 'cusoes', 'cus0es', 'porcaria', 'p0rcaria', 'buceta', 'pinto', 'punheta', 'rola', 'r0la', 'caralho', 'caralh0'];
+        const entrada = document.getElementById("comentario").value;
+        for (let palavra of xingamentos) {
+          if (entrada.includes(palavra)) {
+            document.getElementById("resultado").innerHTML = "palavrão";
+            valor = 1;
+            break;
+          }
+        }
+        if (valor != 1) {
+          document.getElementById("resultado").innerHTML = "não";
+        }
+      }
+    </script>
+  </body>
+</html>
