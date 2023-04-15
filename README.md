@@ -34,3 +34,5 @@ Você está livre para utilizar qualquer linguagem ou ferramenta.
 1. Adicione a esse README instruções de acesso ao seu sistema
 
 ## Acesso
+
+Basta executar o HTML usando o navegador.
