@@ -17,13 +17,13 @@
         const entrada = document.getElementById("comentario").value;
         for (let palavra of xingamentos) {
           if (entrada.includes(palavra)) {
-            document.getElementById("resultado").innerHTML = "palavrão";
+            document.getElementById("resultado").innerHTML = "Comentário Ofensivo!";
             valor = 1;
             break;
           }
         }
         if (valor != 1) {
-          document.getElementById("resultado").innerHTML = "não";
+          document.getElementById("resultado").innerHTML = "Comentário Aprovado.";
         }
       }
     </script>
